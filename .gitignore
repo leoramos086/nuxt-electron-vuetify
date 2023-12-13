@@ -25,3 +25,5 @@ logs
 dist-electron
 release
 **/*.db
+
+yarn-error.log
