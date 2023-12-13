@@ -1,6 +1,3 @@
-import { contextBridge, ipcRenderer } from 'electron'
-import type { IpcRequest } from '~/types/Ipc'
+import { contextBridge } from 'electron'
 
-contextBridge.exposeInMainWorld('api', {
-  trpc: (req: IpcRequest) => ipcRenderer.invoke('trpc', req),
-})
+contextBridge.exposeInMainWorld('api', {})
